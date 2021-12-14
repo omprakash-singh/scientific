@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(19, 17, 17);
+  background-color: rgb(43, 37, 37);
   font-family: "Roboto Mono", monospace;
   color: #fff;
 }
@@ -20,7 +20,7 @@
   color: white;
 }
 .cal-contant tr th:hover {
-  background-color: rgb(39, 35, 35);
+  background-color: rgb(114, 81, 81);
 }
 #equal {
   background-color: rgb(55, 55, 236);

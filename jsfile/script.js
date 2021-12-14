@@ -16,11 +16,19 @@ for (item of button) {
         display.innerHTML += buttonText;
         if (buttonText === '=') {
             display.innerHTML = eval(displayValue);
-        } else if (buttonText === 'X') {
+        } else if (buttonText === '×') {
             displayValue += '*';
         } else if (buttonText === 'C' || buttonText === 'CE') {
             display.innerHTML = " ";
             displayValue = " ";
+        } else if (buttonText === '÷') {
+            displayValue += "/";
+        } else if (buttonText === "√x") {
+
+        } else if (buttonText === "x²") {
+
+        } else if (buttonText === "⌫") {
+
         } else {
             displayValue += e.target.innerText;
         }
