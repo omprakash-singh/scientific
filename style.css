@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(19, 17, 17);
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+}
+.cal-contant {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+}
+.cal-contant tr th {
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+}
+.cal-contant tr th:hover {
+  background-color: rgb(39, 35, 35);
+}
+#equal {
+  background-color: rgb(55, 55, 236);
+}
+#equal:hover {
+  background-color: rgb(22, 22, 245);
+}
+.display {
+  width: 100%;
+  height: 30vh;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 10%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+}
+.nav {
+  color: #fff;
+}
+.fa-bars {
+  cursor: pointer;
+}
+.nav ul li {
+  list-style: none;
+  display: inline;
+  float: left;
+  margin: 20px;
+}
+.nav ul li h1 {
+  position: absolute;
+  top: 15px;
+}
+.menu {
+  height: 100vh;
+  width: 0px;
+  border: 1px solid white;
+  position: absolute;
+  left: -1.7px;
+  overflow: hidden;
+  transition: 1s;
+}
+.menu h1 {
+  font-size: 25px;
+  position: absolute;
+  left: 80%;
+}
+.option {
+  text-align: left;
+  width: 100%;
+  height: 20vh;
+}
+.option ul li {
+  font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+}
+.option ul li a {
+  text-decoration: none;
+}
+.option ul li:hover {
+  background-color: rgb(68, 54, 54);
+}
+.menu h3 {
+  margin-bottom: 30px;
+}
+.menu-contant {
+  height: 100vh;
+  width: 300px;
+  position: absolute;
+  margin: 30px;
+}
+.fa-window-close {
+  cursor: pointer;
+}
+.open {
+  width: 320px;
+}
+
+.trigo {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(107, 96, 96);
+  position: absolute;
+  top: 35vh;
+}
+#trigoFunction {
+  border: 1px solid #ffffff;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.trigoTable {
+  width: 300px;
+  height: 90px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 23%;
+  left: 0.2%;
+  display: none;
+}
+.trigo-contant {
+  width: 100%;
+  height: 100%;
+}
+.trigo-contant tr th {
+  cursor: pointer;
+}
+.trigo-contant tr th:hover {
+  background-color: rgb(68, 54, 54);
+}
+.showTable {
+  display: block;
+}
