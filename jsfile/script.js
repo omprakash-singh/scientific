@@ -24,11 +24,17 @@ for (item of button) {
         } else if (buttonText === '÷') {
             displayValue += "/";
         } else if (buttonText === "√x") {
-
+            displayValue = Math.sqrt(displayValue);
+            display.innerHTML = displayValue;
         } else if (buttonText === "x²") {
-
+            displayValue = Math.pow(displayValue, 2);
+            display.innerHTML = displayValue;
         } else if (buttonText === "⌫") {
-
+            displayValue = displayValue.replace(displayValue.charAt(displayValue.length - 1), " ");
+            display.innerHTML = displayValue;
+        } else if (buttonText === "1/x") {
+            displayValue = 1 / displayValue.charAt(displayValue.length - 1);
+            display.innerHTML = displayValue;
         } else {
             displayValue += e.target.innerText;
         }
