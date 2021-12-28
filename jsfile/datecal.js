@@ -9,10 +9,10 @@ let menubar = () => {
 };
 
 cal.addEventListener('click', () => {
-
-    if (from.value === null) {
-        result.innerHTML = "No value";
+    if (from.value === "") {
+        alert("Enter valid from date");
+    } else if (to.value === "") {
+        alert("Enter valid to date");
     }
-    result.innerHTML = from.value;
-
+    result.innerHTML = "from date is " + from.value + "<br> to date is " + to.value;
 });
