@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Date Calculation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contant {
+            width: 40%;
+            height: 40vh;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            place-items: center;
+            text-align: left;
+        }
+
+        .result {
+            width: 40%;
+            height: 50px;
+        }
+
+        input {
+            width: 200px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            border-radius: 30px;
+            height: 40px;
+            font-weight: 800;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,16 +49,31 @@
         <ul>
             <li><i class="fas fa-bars" onclick="menubar()"></i></li>
             <li>
-                <h1>Standard</h1>
+                <h1>Date Calculation</h1>
             </li>
         </ul>
     </nav>
 
     <!--Write here-->
 
+    <div class="main">
+        <div class="contant">
+            <h1>Difference between Dates</h1>
+            <h4>From</h4>
+            <input type="date" name="from" id="from">
+            <label for="to">To</label>
+            <input type="date" name="to" id="to">
+            <button id="calculate">Calculate</button>
 
 
+            <div id="result">
 
+                <p>result box
+
+                </p>
+            </div>
+        </div>
+    </div>
     <!--End-->
 
     <div class="menu">
